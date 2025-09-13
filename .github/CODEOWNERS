@@ -1,0 +1,8 @@
+# CODEOWNERS file for dependency-viewer
+
+# Set code owners for all files
+*       @Coxless
+
+# Example: Set code owners for specific directories or files
+# /src/   @team-leads
+# /docs/  @documentation-team
