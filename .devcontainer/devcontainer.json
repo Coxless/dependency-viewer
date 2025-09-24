@@ -1,0 +1,10 @@
+{
+	"name": "dependency-viewer",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/atty303/devcontainer-features/mise:1": {}
+	},
+	"onCreateCommand": "gh auth login && [ -z \"$(ls -A)\" ] && gh repo clone Coxless/dependency-viewer . || echo 'Directory not empty, skipping clone'",
+	"postCreateCommand": "mise trust && mise install"
+}
